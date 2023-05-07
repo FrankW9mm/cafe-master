@@ -1,0 +1,38 @@
+:root{
+    --maincolor: #FFFFFF;
+    --accentColor: #F1F1F1;
+    --btnColor : #FFA16C;
+    --btnColor2 : #3C3C3C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    
+}
+
+.shape{
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    filter: blur(120px);
+    width: 80vw;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom left, var(--btnColor), var(--accentColor));
+    opacity: 0.5;
+    clip-path: polygon(45% 0, 100% 9%, 100% 79%, 68% 72%, 55% 100%, 15% 84%, 0 31%);
+
+}
+
+.shape1{
+    width: 80vw;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom left, var(--btnColor), var(--accentColor));
+    opacity: 0.5;
+    clip-path: polygon(45% 0, 100% 9%, 100% 79%, 68% 72%, 55% 100%, 15% 84%, 0 31%);
+
+}
