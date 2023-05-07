@@ -5,6 +5,7 @@
     --btnColor : #FFA16C;
     --btnColor2 : #3C3C3C;
     --Title-font : 25px;
+    --normal-font: 18px;
     --font-style:'Poppins',
         sans-serif;
 }
@@ -47,6 +48,8 @@
     
 }
 .main-central-nav-input input {
+    font-family: var(--font-style);
+    color: #818181;
     width: 250px;
     padding: 0.75rem;
     outline: none;
@@ -56,7 +59,12 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+.main-central-nav-input input:focus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 .main-central-nav-input button {
+    font-family: var(--font-style);
     background-color: var(--btnColor);
     border: none;
     width: 100px;
@@ -64,7 +72,14 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 16px ;
-    color:var(--maincolor)
+    color:var(--maincolor);
+    cursor: pointer;
+}
+.main-central-nav-input button:hover {
+    background-color: var(--btnColor2);
+    border-right: 1pt solid var(--btnColor2);
+    transition: 0.5s;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 .main-central-nav-btn{
@@ -75,6 +90,14 @@
     background: var(--btnColor2);
     color:var(--maincolor);
     border-radius: 10px;
+    font-family: var(--font-style);
+    
+}
+.main-central-nav-btn:hover{
+    background-color: var(--btnColor);
+    transition: 0.5s;
+    
+    /* box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5); */
 }
 .main-sideNav-logo-container{
     width: 100px;
@@ -95,4 +118,19 @@
     font-family: var(--font-style);
     font-size: var(--Title-font) ;
     color: var(--btnColor2);
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: var(--font-style);
+    text-decoration: none;
+    font-size: var(--normal-font);
+    color: var(--btnColor2);
+}
+
+.nav-links:hover{
+    color: var(--btnColor);
+    transition-duration: 0.75ms;
+    transition: 0.7s;
 }
