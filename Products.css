@@ -130,13 +130,15 @@
     color: var(--btnColor2);
     
 }
-
+.active-link{
+    color: aqua !important; 
+}
 
 .nav-links:hover{
     color: var(--btnColor);
     transition: 0.5s;
     transform: translateX(-5px) translateY(-5px);
 }
-/* .nav-links:active {
+.nav-links.active {
     color: blueviolet;
-} */
+}
