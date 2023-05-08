@@ -16,241 +16,72 @@
     overflow: hidden;
     font-family: var(--font-style);
 }
-
+body{
+    background-color: var(--accentColor);
+}
 .app{
-
+    /* background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18); */
 }
-
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-        width: 700px;
-        top: -20%;
-        left: -20%;
-    }
-    25%{
-        width: 70vw;
-    }
-    50%{
-        width: 50vw;
-        top: 80%;
-        left: 95%;
-    }
-    75%{
-        width: 700px;
-    }
-    100%{
-        transform: rotate(360deg);
-        width: 700px;
-        left: -20%;
-        top: -20%;
-    }
-}
-
-@keyframes rotate1{
-    0%{
-        transform: rotate(0deg);
-        width: 300px;
-        bottom: 30%;
-        right: -3%;
-    }
-    50%{
-        bottom: 30%;
-        right: 90%;
-    }
-    100%{
-        transform: rotate(360deg);
-        width: 300px;
-        bottom: 30%;
-        right: -3%;
-    }
-}
-
-/* .shape{
-    filter: blur(64px);
-    width: 800px;
-    aspect-ratio: 1/1;
-    position: absolute;
-    background: linear-gradient(to top right, var(--btnColor), #a2d2ff ,#ff006e);
-    opacity: 1;
-    animation: rotate 15s linear infinite;
-    border-radius: 100%;
-    z-index: -1;
-} */
-
-/* .shape1{
-    filter: blur(64px);
-    position: absolute;
-    aspect-ratio: 1/1;
-    position: absolute;
-    background: linear-gradient(to top right, var(--btnColor), #a2d2ff, #ff006e);
-    opacity: 0;
-    animation: rotate1 20s linear infinite;
-    border-radius: 100%;
-    z-index: -1
-} */
-
-@keyframes move{
-    from{
-        top: -60%;
-        left: -60%;
-    }
-    to{
-        top: 60%;
-        left: 100%;
-    }
-}
-
-@keyframes move1{
-    0%{
-        top: -40%;
-        left: 10%;
-    }
-    100%{
-        top: 100%;
-        left: 50%;
-    }
-}
-
-@keyframes move2{
-    0%{
-        top: 70%;
-        left: -20%;
-    }
-    100%{
-        top: -30%;
-        left: 50%;
-    }
-}
-
-@keyframes move3{
-    0%{
-        top: 30%;
-        left: 90%;
-    }
-    100%{
-        top: -50%;
-        left: 60%;
-    }
-}
-
-@keyframes move6{
-    0%{
-        top: 30%;
-        left: 35%;
-    }
-    100%{
-        top: -30%;
-        left: 30%;
-    }
-}
-
 .shape{
-    background-color: var(--btnColor);
-    width: 1000px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.4;
+    z-index: -10;
+    width: 300px;
+    height: 500px;
     position: absolute;
-    top: -55%;
-    left: -30%;
-    z-index: -1;
-    filter: blur(5px);
-    animation: move 100s linear infinite;
+    background-image: linear-gradient(270deg,
+            hsl(60, 100%, 94%) 0%,
+            hsl(39, 100%, 69%) 26%,
+            hsl(76, 100%, 83%) 39%,
+            hsl(54, 100%, 88%) 50%,
+            hsl(63, 100%, 90%) 61%,
+            hsl(41, 100%, 65%) 74%,
+            hsl(76, 85%, 64%) 100%);
+        filter: blur(125px);
+        animation: sHtrKya 20s infinite;
 }
 
-.shape1{
-    background-color: #0099ff;
-    width: 400px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.4;
-    position: absolute;
-    animation: move1 60s linear infinite;
-    top: -20%;
-    left: 20%;
-    z-index: -3;
-    filter: blur(5px);
-}
 
-.shape2{
-    background-color: #ff00d0;
-    width: 250px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.5;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    z-index: -4;
-    filter: blur(5px);
-    animation: move2 10s linear infinite;
-}
-
-.shape3{
-    background-color: var(--btnColor);
-    width: 700px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.4;
-    position: absolute;
-    bottom: -30%;
-    right: -20%;
-    z-index: -1;
-    filter: blur(5px);
-    animation: move3 10s linear infinite;
-}
-
-.shape4{
-    background-color: #ff00d0;
-    width: 500px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.5;
-    position: absolute;
-    top: -15%;
-    right: -15%;
-    z-index: -4;
-    filter: blur(5px);
-}
-
-.shape5{
-    background-color: #0099ff;
-    width: 250px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.4;
-    position: absolute;
-    bottom: -10%;
-    left: 0%;
-    z-index: -3;
-    filter: blur(5px);
-}
-
-.shape6{
-    background-color: #ffbe0b;
-    width: 600px;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    opacity: 0.5;
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    z-index: -2;
-    filter: blur(5px);
-    animation: move6 10s linear infinite;
+@keyframes sHtrKya {
+    0%{
+        right: 0%;
+        bottom: 50%;
+        width: 300px;
+        rotate: 0deg;
+    }
+    30%{
+        right: 20%;
+        bottom: 40%;
+        rotate: 40deg;
+    }
+    50%{
+        right: 60%;
+        bottom: 0%;
+        width: 600px;
+        rotate: 60deg;
+    }
+    100%{
+        right: 0%;
+        bottom: 50%;
+        width: 300px;
+        rotate: 360deg;
+    }
 }
 
 .logo{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-items: center;
     width: 500px;
     margin: auto;
     margin-top: 20%;
 }
 
 .logo img{
-    align-self: flex-start;
+    /* align-self: flex-start; */
     height: 80px;
     width: 100px;
     z-index: 10;
