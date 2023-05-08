@@ -91,6 +91,7 @@
     color:var(--maincolor);
     border-radius: 10px;
     font-family: var(--font-style);
+    cursor: pointer;
     
 }
 .main-central-nav-btn:hover{
@@ -127,10 +128,15 @@
     text-decoration: none;
     font-size: var(--normal-font);
     color: var(--btnColor2);
+    
 }
+
 
 .nav-links:hover{
     color: var(--btnColor);
-    transition-duration: 0.75ms;
-    transition: 0.7s;
+    transition: 0.5s;
+    transform: translateX(-5px) translateY(-5px);
 }
+/* .nav-links:active {
+    color: blueviolet;
+} */
