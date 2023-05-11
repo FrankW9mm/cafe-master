@@ -26,11 +26,16 @@ body{
         -webkit-backdrop-filter: blur(4px);
         border: 1px solid rgba(255, 255, 255, 0.18); */
 }
+.Logo-p{
+    color: var(--btnColor2);
+}
 .shape{
     z-index: -10;
-    width: 300px;
+    width: 500px;
     height: 500px;
+    border-radius: 50%;
     position: absolute;
+    translate: -50% -50%;
     background-image: linear-gradient(270deg,
             hsl(60, 100%, 94%) 0%,
             hsl(39, 100%, 69%) 26%,
@@ -38,34 +43,42 @@ body{
             hsl(54, 100%, 88%) 50%,
             hsl(63, 100%, 90%) 61%,
             hsl(41, 100%, 65%) 74%,
-            hsl(76, 85%, 64%) 100%);
+            hsl(49, 100%, 66%) 100%);
+            /* hsl(295deg 76% 51%) 0%,
+                hsl(284deg 70% 73%) 26%,
+                hsl(257deg 70% 86%) 39%,
+                hsl(202deg 92% 90%) 50%,
+                hsl(215deg 77% 81%) 61%,
+                hsl(221deg 73% 70%) 74%,
+                hsl(220deg 76% 51%) 100%); */
         filter: blur(125px);
-        animation: sHtrKya 20s infinite;
+        animation: sHtrKya 5s infinite;
 }
 
 
 @keyframes sHtrKya {
     0%{
-        right: 0%;
+        /* right: 0%;
         bottom: 50%;
-        width: 300px;
+        width: 300px; */
         rotate: 0deg;
     }
     30%{
-        right: 20%;
-        bottom: 40%;
-        rotate: 40deg;
+        /* right: 20%;
+        bottom: 40%; */
+        rotate: 90deg;
+        scale: 1 1.5;
     }
     50%{
-        right: 60%;
+        /* right: 60%;
         bottom: 0%;
-        width: 600px;
-        rotate: 60deg;
+        width: 600px; */
+        rotate: 180deg;
     }
     100%{
-        right: 0%;
+        /* right: 0%;
         bottom: 50%;
-        width: 300px;
+        width: 300px; */
         rotate: 360deg;
     }
 }
@@ -89,4 +102,25 @@ body{
 
 .logo p{
     font-size: 50px;
+}
+
+.links-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links-holder a:first-child{
+    text-decoration: none;
+    background: var(--btnColor);
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--accentColor);
+}
+
+.links-holder a:last-child{
+    text-decoration: none;
+    color: var(--btnColor2);
 }
